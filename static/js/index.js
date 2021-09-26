@@ -106,6 +106,5 @@ function LED3_Off(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  document.getElementById("cnt").innerHTML=message.payloadString;
-	  document.getElementById("cnt2").innerHTML=message.payloadString;
   }
   
