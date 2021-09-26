@@ -15,7 +15,7 @@ function LED1_Off(){
 	message = new Paho.MQTT.Message("OFF");
     	message.destinationName = "prromero.fis@unach.edu.ec/test1";
     	client.send(message);
-	//document.getElementById("sensor1").innerHTML="led off";
+	document.getElementById("sensor1").innerHTML="led off";
 }
 
 
