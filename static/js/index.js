@@ -105,6 +105,7 @@ function LED3_Off(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	  document.getElementById("sensor").innerHTML=message.payloadString;
+	  document.getElementById("cnt").innerHTML=message.payloadString;
+	  document.getElementById("cnt2").innerHTML=message.payloadString;
   }
   
