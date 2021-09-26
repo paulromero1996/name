@@ -3,7 +3,7 @@
 function LED1_On() {
 	//alert("led on");
 	console.log("led on");
-	document.getElementById("sensor1").innerHTML="led on";
+	document.getElementById("sensor1").innerHTML="Encendido";
 	message = new Paho.MQTT.Message("ON");
     	message.destinationName = "prromero.fis@unach.edu.ec/test1";
     	client.send(message);
@@ -15,15 +15,15 @@ function LED1_Off(){
 	message = new Paho.MQTT.Message("OFF");
     	message.destinationName = "prromero.fis@unach.edu.ec/test1";
     	client.send(message);
-	document.getElementById("sensor1").innerHTML="led off";
+	document.getElementById("sensor1").innerHTML="Apagado";
 }
 
 
 function LED2_On() {
 	//alert("led on");
 	console.log("led on");
-	document.getElementById("sensor2").innerHTML="led on";
-	message = new Paho.MQTT.Message("ON");
+	document.getElementById("sensor2").innerHTML="Encendido";
+	message = new Paho.MQTT.Message("ON2");
     	message.destinationName = "prromero.fis@unach.edu.ec/test1";
     	client.send(message);
 	
@@ -31,17 +31,17 @@ function LED2_On() {
 function LED2_Off(){	
 	//alert("led off");
 	console.log("led off");
-	message = new Paho.MQTT.Message("OFF");
+	message = new Paho.MQTT.Message("OFF2");
     	message.destinationName = "prromero.fis@unach.edu.ec/test1";
     	client.send(message);
-	document.getElementById("sensor2").innerHTML="led off";
+	document.getElementById("sensor2").innerHTML="Apagado";
 }
 
 function LED3_On() {
 	//alert("led on");
 	console.log("led on");
-	document.getElementById("sensor3").innerHTML="led on";
-	message = new Paho.MQTT.Message("ON");
+	document.getElementById("sensor3").innerHTML="Encendido";
+	message = new Paho.MQTT.Message("ON3");
     	message.destinationName = "prromero.fis@unach.edu.ec/test1";
     	client.send(message);
 	
@@ -49,10 +49,10 @@ function LED3_On() {
 function LED3_Off(){	
 	//alert("led off");
 	console.log("led off");
-	message = new Paho.MQTT.Message("OFF");
+	message = new Paho.MQTT.Message("OFF3");
     	message.destinationName = "prromero.fis@unach.edu.ec/test1";
     	client.send(message);
-	document.getElementById("sensor3").innerHTML="led off";
+	document.getElementById("sensor3").innerHTML="Apagado";
 }
 
 
